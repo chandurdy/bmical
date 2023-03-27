@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BmiCal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="head">
+        <input
+          id="weight"
+          type="number"
+          maxlength="3"
+          placeholder="Enter weight in kg's"
+        />
+        <input
+          id="height"
+          type="number"
+          maxlength="4"
+          placeholder="Enter height in cm"
+        />
+        <button id="btn" type="submit">Get Bmi</button>
+        <button class="reset" type="reset">Reset</button>
+      </div>
+      <h1 class="center">
+        Check your BMI <span id="span">and follow the recommended Diet</span>
+      </h1>
+      <div class="container">
+        <div class="index">
+          <h1 id="indexnumber">00</h1>
+          <p class="bmi">BMI</p>
+        </div>
+        <div class="suggestions">
+          <h3>Recommended Diet</h3>
+          <ul class="recommendlist">
+            <li>High fider</li>
+            <li>Lean protein</li>
+            <li>Fruits and vegetables</li>
+            <li>Healthy Fats</li>
+            <li>Whole grains</li>
+          </ul>
+        </div>
+        <div class="riskfactors">
+          <h3>Riskfactors</h3>
+          <ul class="risklist">
+            <li>Cardiovascular disease</li>
+            <li>Type 2 diabetes</li>
+            <li>Respiratory problems</li>
+            <li>Cancer</li>
+            <li>Fatty liver disease</li>
+            <li>Mental health problems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="./bmi.js"></script>
+  </body>
+</html>
